@@ -10,6 +10,22 @@ namespace Opgave2Uge1
     {
         static void Main(string[] args)
         {
+            string a;
+            string b;
+            bool c = false;
+
+            Console.WriteLine("Enter first text");
+            a = Console.ReadLine();
+            Console.WriteLine("Ok now for second text");
+            b = Console.ReadLine();
+
+            Comparisson x = new Comparisson(a, b);
+            c = x.compair();
+
+            Console.WriteLine("The texts are acronyms: " + c.ToString());
+
+            Console.ReadLine();
+            
         }
     }
 }
